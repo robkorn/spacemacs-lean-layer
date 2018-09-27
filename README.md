@@ -1,6 +1,7 @@
-This is a Spacemacs layer for the [Lean theorem prover][lean] which uses [Lean Mode][lm] with updated keybindings.
-[lean]: https://github.com/leanprover/lean
-[lm]: https://github.com/leanprover/lean-mode
+This is a Spacemacs layer for the Lean theorem prover which uses Lean Mode with updated keybindings.
+
+Lean: https://github.com/leanprover/lean
+Lean Mode: https://github.com/leanprover/lean-mode
 
 Key Bindings and Commands
 =========================
