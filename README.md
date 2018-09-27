@@ -23,3 +23,11 @@ Key Bindings and Commands
 | <kbd>Spc e n</kbd> | flycheck: go to next error                                                      |
 | <kbd>Spc e p</kbd> | flycheck: go to previous error                                                  |
 | <kbd>Spc e l</kbd> | flycheck: show list of errors                                                   |
+
+Installation
+==============
+        $ git clone https://github.com/robkorn/spacemacs-lean-layer
+        $ cd spacemacs-lean-layer 
+        $ mv lean ~/.emacs.d/private/local
+
+Then simply add 'lean' as one of your configuration layers in your spacemacs config.
