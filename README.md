@@ -31,3 +31,9 @@ Installation
         $ mv lean ~/.emacs.d/private/local
 
 Then simply add 'lean' as one of your configuration layers in your spacemacs config.
+
+
+Possible Issues
+==============
+1. 'Spc m' isn't available for lean.
+After a couple hours of hunting around for why this issue exists it seems it is in relation too the lean-mode layer itself. Even using lean-server-restart doesn't seem to initalize it properly. However to fix this simply toggle company auto-complete and for whatever reason the 'Spc m' menu magically works. This issue exists whether or not company-lean is installed.
