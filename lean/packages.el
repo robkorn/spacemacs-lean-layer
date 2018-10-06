@@ -33,6 +33,13 @@
     :defer t
     :mode "\\.lean\\'"
   )
+  (add-to-list 'spacemacs-indent-sensitive-modes 'lean-mode)
+  (spacemacs|define-jump-handlers lean-mode (lean-find-definition :async t))
+  (sp-local-pair 'lean-mode "/-" "-/")
+  (sp-local-pair 'lean-mode "`'" nil :actions :rem)
+  (sp-local-pair 'lean-mode "⟨" "⟩")
+  (sp-local-pair 'lean-mode "«" "»")
+
 )
 
 (defun lean/init-company-lean ()

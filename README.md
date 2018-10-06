@@ -8,6 +8,7 @@ Key Bindings and Commands
 
 | Key                | Function                                                                        |
 |--------------------|---------------------------------------------------------------------------------|
+| <kbd>g d</kbd>     | jump to definition in source file (`lean-find-definition`)                      |
 | <kbd>Spc m f</kbd> | jump to definition in source file (`lean-find-definition`)                      |
 | <kbd>Spc m ,</kbd> | jump back to position before <kbd>M-.</kbd> (`xref-pop-marker-stack`)           |
 | <kbd>Spc m k</kbd> | shows the keystroke needed to input the symbol under the cursor                 |
@@ -35,5 +36,5 @@ Then simply add 'lean' as one of your configuration layers in your spacemacs con
 
 Possible Issues
 ==============
-1. 'Spc m' isn't available for lean.
-After a couple hours of hunting around for why this issue exists it seems it is in relation too the lean-mode layer itself. Even using lean-server-restart doesn't seem to initalize it properly. However to fix this simply toggle company auto-complete and for whatever reason the 'Spc m' menu magically works. This issue exists whether or not company-lean is installed.
+###### 1. 'Spc m' isn't available for lean.  
+After a couple hours of hunting around for why this issue exists it seems it is in relation to the lean-mode package itself. Even using lean-server-restart doesn't seem to initalize it properly. However to fix this simply toggle company auto-complete and for whatever reason Spacemacs remembers you are indeed in Vim mode and should have access to the Vim Leader Key for this major mode. This issue exists whether or not company-lean is installed.
