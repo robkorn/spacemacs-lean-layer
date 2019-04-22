@@ -5,7 +5,7 @@
 
 (defun lean/post-init-company ()
   (spacemacs|add-company-hook company-lean)
-  )
+ )
 
 (defun lean/post-init-lean-mode ()
   (spacemacs/set-leader-keys-for-major-mode 'lean-mode
