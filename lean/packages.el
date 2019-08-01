@@ -4,7 +4,7 @@
 
 
 (defun lean/post-init-company ()
-  (spacemacs|add-company-hook company-lean)
+  (spacemacs|add-company-backends :backends company-lean :modes lean-mode)
  )
 
 (defun lean/post-init-lean-mode ()
