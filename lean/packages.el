@@ -1,6 +1,7 @@
 (setq lean-packages '(company
                       lean-mode
                       company-lean
+                      helm-lean
                       smartparens))
 
 
@@ -40,6 +41,13 @@
 
 (defun lean/init-company-lean ()
   (use-package company-lean
+    :defer t
+    :mode "\\.lean\\'"
+    )
+  )
+
+(defun lean/init-helm-lean ()
+  (use-package helm-lean
     :defer t
     :mode "\\.lean\\'"
     )
